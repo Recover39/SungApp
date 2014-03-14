@@ -1,0 +1,246 @@
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "맑은 고딕", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    padding-top: 56px;
+}
+
+nav.navbar {
+    background-color: #5a5a5a;
+    min-height: 36px;
+}
+
+nav #title {
+    text-align: center;
+    font-size: 16px;
+    color: #f8f8f8;
+    padding: 4px;
+}
+
+nav .customer {
+    clear: both;
+    margin-top: 10px;
+    width: 50px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #a5abb2;
+    font-size: 12px;
+    line-height: 7px;
+    vertical-align: middle;
+    float: right;
+}
+
+.writePostCard {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #525252;
+}
+
+#introduction {
+    padding : 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(230,121,104,0.45);
+    background-color: #E57766;
+    color : #eeeeee;
+    font-size: 15px;
+}
+
+#writePost {
+    height: auto;
+    margin-top : 20px;
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    border: 1px solid #d4d4d4;
+    border-radius: 3px;
+    background-color: #fafafa;
+    box-shadow: 2px 2px 6px rgba(162,162,162,0.4);
+}
+
+#writePost .writeCommit {
+    padding-top: 4px;
+    width: 100%;
+    height: auto;
+    min-height : 42px;
+}
+
+#writePost .simple{
+    width: 100%;
+	border: 1px solid #a5abb2;
+	border-radius: 2px;	
+	font-size: 14px;
+	margin-left: 5%;
+	margin-right: 2%;
+	resize: none;
+	line-height: 23px;
+}
+
+#writePost .writeButton {
+    clear: both;
+    margin-top: 10px;
+    width: 50px;
+    min-height: 25px;
+    border-radius: 2px;
+    border: 1px solid #a5abb2;
+    font-size: 12px;
+    line-height: 7px;
+    vertical-align: middle;
+    float: right;
+}
+
+.cardList {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #525252;
+}
+
+.col-md-5.col-md-offset-3.card {
+    margin-top : 25px;
+    background-color: #fafafa;
+    border-radius: 3px;
+    border : 1px solid #d4d4d4;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-shadow: 2px 2px 6px rgba(162,162,162,0.4);
+}
+
+.cardInfomation {
+    width: 100%;
+    height : 20px;
+    font-size: 12px;
+    margin-top: 16px;
+    color: #999595;
+}
+
+.cardInfomation .cardNum {
+    width: 80px;
+    height : auto;
+    float: left;
+    border : 1px solid black;
+    text-align: left;
+    margin-left: 22px;
+}
+
+.cardInfomation .cardCommitTime {
+    width : 90px;
+    height : auto;
+    float : right;
+    border : 1px solid black;
+    text-align: right;
+    margin-right: 22px;
+}
+
+.col-md-5.col-md-offset-3.card .cardBody {
+    clear: both;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.cardStatus {
+    clear: both;
+    width: 100%;
+    height : 30px;
+    border : 1px solid black;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 15px;
+    background-color: #e7e8ec;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    vertical-align: middle;
+    line-height: 28px;
+}
+
+.cardStatus .likeCount {
+    float : left;
+    width : 60px;
+    height : 30px;
+    border : 1px solid black;
+    text-align: left;
+}
+
+.cardStatus .commitCount{
+    float : left;
+    width : 60px;
+    height : 30px;
+    border : 1px solid black;
+    text-align: right;
+}
+
+.cardReply {
+    clear: both;
+    width: 100%;
+    height: auto;
+    border : 1px solid black;
+    background-color: #eff0f5;
+}
+
+.cardReply .replyList {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cardReply .replyList .reply {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ded9d9;
+    text-align: left;
+}
+
+.cardReply .replyCommit {
+    padding-top: 4px;
+    border-top : 1px solid #d4d4d4;
+    width: 100%;
+    min-height : 42px;
+    padding-left: 22px;
+    padding-bottom: 4px;
+}
+
+.cardReply .replyCommit .simpleInput {
+    width: 82%;
+	border: 1px solid #a5abb2;
+	border-radius: 2px;	
+	font-size: 14px;
+	margin-left: 5%;
+	margin-right: 2%;
+	float : left;
+	word-break: break-word;
+	resize: none;
+	line-height: 23px;
+}
+
+.cardReply .replyCommit .replyButton {
+    width: 50px;
+    min-height: 25px;
+    border-radius: 2px;
+    border: 1px solid #a5abb2;
+    font-size: 12px;
+    line-height: 7px;
+    vertical-align: middle;
+}
+
+footer {
+    height: 50px;
+    padding: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #6e6c6c;
+    font-size: 15px;
+}
