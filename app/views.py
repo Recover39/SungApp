@@ -4,3 +4,7 @@ from app import app
 @app.route('/')
 def index():
     return render_template('main.jade')
+
+@app.route('/test')
+def test():
+    return render_template('testMain.jade')
