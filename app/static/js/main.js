@@ -25,23 +25,15 @@ var pageWriteFunction = (function () {
             window.location="/card";
         },
 
-        writeSectionExpand: function (e) {
-            var curTextArea = e.toElement;
-            curTextArea.oninput = function() {
-                curTextArea.style.height = "";
-                curTextArea.style.height = Math.min(curTextArea.scrollHeight, 300) + "px";
-            };
-        },
-
         addEvent : function() {
             var writeArea = document.getElementById('postTextArea'),
                 writeButton = document.getElementById('writeButton');
-            writeArea.addEventListener("click", card.writeSectionExpand, true);
+            writeArea.addEventListener("click", util.writeSectionExpand, true);
             writeButton.addEventListener("click", card.write, true);
         }
     };
 
-    var reply = {
+    var comment = {
         write: function (e) {
             e.preventDefault();
 
@@ -62,24 +54,33 @@ var pageWriteFunction = (function () {
             curForm[1].value = "";
         },
 
-        writeSectionExpand: function (e) {
-
-        },
-
         addEvent : function () {
-            var replySection = document.getElementsByClassName("cardReply"),
-                replyNum = replySection.length;
+            var commentSection = document.getElementsByClassName("commentBody"),
+                commentNum = commentSection.length;
 
-            for (var i = 0; i < replyNum; i++) {
+            for (var i = 0; i < commentNum; i++) {
+                commentSection[i].addEventListener("click", util.writeSectionExpand, true);
             }
         }
     };
 
+    var util = {
+        writeSectionExpand: function (e) {
+            var curTextArea = e.toElement;
+            curTextArea.oninput = function() {
+                curTextArea.style.height = "";
+                curTextArea.style.height = Math.min(curTextArea.scrollHeight, 100) + "px";
+            };
+        }
+    };
+
     return {
-        cardEventAdd : card.addEvent
+        cardEventAdd : card.addEvent,
+        commentEventAdd : comment.addEvent
     };
 })();
 
 (function() {
     pageWriteFunction.cardEventAdd();
+    pageWriteFunction.commentEventAdd();
 })();

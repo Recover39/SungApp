@@ -50,7 +50,28 @@ html(lang='en')
                                         | 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘
                                 form.commentCommit(method = 'post', role='form')
                                     input(type='hidden', name='cardId', value='')
-                                    textarea.simpleInput(rows='1', cols='20', type='text', name='commentBody')
+                                    textarea.commentBody(rows='1', cols='20', type='text', name='commentBody')
+                                    button.btn.btn-lg.btn-block.commentButton(type='submit')  댓글달기
+                    .col-md-5.col-md-offset-3.card
+                            .cardInfomation
+                                .cardNum
+                                    | No.123454
+                                .cardCommitTime
+                                    | 24 Hours ago
+                            .cardBody
+                                | show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money show me the money
+                            .cardStatus
+                                .likeCount
+                                    | 은행 115개
+                                .commitCount
+                                    | 댓글 123개
+                            .cardComment
+                                .commentList
+                                    .comment
+                                        | 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘 돈을 보여줘
+                                form.commentCommit(method = 'post', role='form')
+                                    input(type='hidden', name='cardId', value='')
+                                    textarea.commentBody(rows='1', cols='20', type='text', name='commentBody')
                                     button.btn.btn-lg.btn-block.commentButton(type='submit')  댓글달기
         
         footer

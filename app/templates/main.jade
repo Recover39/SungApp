@@ -48,7 +48,7 @@ html(lang='en')
                                             | #{comment.commentBody}
                                 form.commentCommit(action = '/card/#{card.cardId}/comment/add', method = 'post', role='form')
                                     input(type='hidden', name='cardId', value='#{card.cardId}')
-                                    textarea.simpleInput(rows='1', cols='20', type='text', name='commentBody')
+                                    textarea.commentBody(rows='1', cols='20', type='text', name='commentBody')
                                     button.btn.btn-lg.btn-block.commentButton(type='submit')  댓글달기
         footer
             .col-md-5.col-md-offset-3

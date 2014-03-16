@@ -64,6 +64,7 @@ nav .customer {
     border-radius: 3px;
     background-color: #fafafa;
     box-shadow: 2px 2px 6px rgba(162,162,162,0.4);
+    overflow: hidden;
 }
 
 #writePost .writeCommit {
@@ -73,12 +74,11 @@ nav .customer {
     min-height : 42px;
 }
 
-#writePost .simple{
+#writePost #postTextArea{
     width: 100%;
 	border: 1px solid #a5abb2;
 	border-radius: 2px;	
 	font-size: 14px;
-	1margin-left: 5%;
 	margin-right: 2%;
 	resize: none;
 	line-height: 23px;
@@ -112,6 +112,7 @@ nav .customer {
     padding-left: 0px;
     padding-right: 0px;
     box-shadow: 2px 2px 6px rgba(162,162,162,0.4);
+    height: auto;
 }
 
 .cardInfomation {
@@ -177,8 +178,9 @@ nav .customer {
 .cardComment {
     clear: both;
     width: 100%;
-    height: auto;
+    min-height: 30px;
     background-color: #eff0f5;
+    overflow:hidden;
 }
 
 .cardComment .commentList {
@@ -204,12 +206,13 @@ nav .customer {
     padding-bottom: 4px;
 }
 
-.cardComment .commentCommit .simpleInput {
+.cardComment .commentCommit .commentBody {
     width: 82%;
 	border: 1px solid #a5abb2;
 	border-radius: 2px;	
 	font-size: 14px;
 	margin-right: 2%;
+	margin-bottom: 9px;
 	float : left;
 	word-break: break-word;
 	resize: none;
