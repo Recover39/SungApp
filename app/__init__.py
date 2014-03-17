@@ -12,3 +12,7 @@ if __name__ == '__main__':
     app.run()
 
 from app import views
+
+from app.Card.views import card
+
+app.register_blueprint(card)
