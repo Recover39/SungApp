@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect
 
 card = Blueprint('Card', __name__, url_prefix='/card')
 
@@ -6,7 +6,8 @@ card = Blueprint('Card', __name__, url_prefix='/card')
 def index():
     return render_template('main.jade')
 
-@card.route('/add', method=['POST'])
-def write_card():
-    json = request.json
-    print(json)
+@card.route('/add', methods=['GET','POST'])
+def write():
+    if request.method == 'POST':
+        print(request.form['body'])
+    return redirect('/card')

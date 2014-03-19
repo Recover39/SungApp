@@ -12,23 +12,28 @@ html(lang='en')
         link(href='/static/css/main.css', rel='stylesheet', type='text/css')
     body(style='')
         nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
-            #title.col-md-5.col-md-offset-3
+            #title.col-md-6.col-md-offset-3
                 | 은행잎필무렵
                 button.btn.btn-lg.btn-block.customer  고객센터
+        .container
+                .row
+                    .col-md-6.col-md-offset-3
+                        #newCard(onclick ='location.href = \'/test#newCardStart\';')
+                            | ↑ 새로운 소식
         .writePostCard
             .container
                 .row
-                    #introduction.col-md-5.col-md-offset-3
+                    #introduction.col-md-6.col-md-offset-3
                         | 모든 글은 익명으로 작성되며, 24시간 후 지워집니다.
-                    #writePost.col-md-5.col-md-offset-3
-                        form.writeCommit(method ='post', role='form')
+                    #writePost.col-md-6.col-md-offset-3
+                        form.writeCommit(method ='post', role='form', action = '/card/add')
                             textarea#postTextArea.simple(rows='3', cols='60', type='text', name='body')
                             button#writeButton.btn.btn-lg.btn-primary.btn-block(type='submit')  글쓰기
         .cardList
             .container
                 .row
                     each card in cards
-                        .col-md-5.col-md-offset-3.card
+                        .col-md-6.col-md-offset-3.card
                             .cardInfomation
                                 .cardNum
                                     | No.#{card.cardId}
@@ -51,7 +56,7 @@ html(lang='en')
                                     textarea.commentBody(rows='1', cols='20', type='text', name='commentBody')
                                     button.btn.btn-lg.btn-block.commentButton(type='submit')  댓글달기
         footer
-            .col-md-5.col-md-offset-3
+            .col-md-6.col-md-offset-3
                 | 2014, Angtree
         //JavaScript
         script(src='/static/js/jquery-1.10.2.js')

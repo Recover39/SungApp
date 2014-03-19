@@ -36,6 +36,24 @@ nav .customer {
     float: right;
 }
 
+#newCard {
+    position : fixed;
+    width: 111px;
+    height: 26px;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+    color : #427fe7;
+    z-index: 3;
+    font-size: 13px;
+    box-shadow: 1px 2px 6px #848484;
+    text-align: center;
+    line-height: 26px;
+    vertical-align: middle;
+    cursor: pointer;
+    left: 50%;
+    margin: 0 0 0 -56px;
+}
+
 .writePostCard {
     display: table;
     width: 100%;
@@ -104,7 +122,7 @@ nav .customer {
     color: #525252;
 }
 
-.col-md-5.col-md-offset-3.card {
+.col-md-6.col-md-offset-3.card {
     margin-top : 25px;
     background-color: #fafafa;
     border-radius: 3px;
@@ -139,7 +157,7 @@ nav .customer {
     margin-right: 22px;
 }
 
-.col-md-5.col-md-offset-3.card .cardBody {
+.col-md-6.col-md-offset-3.card .cardBody {
     clear: both;
     margin-top: 6px;
     margin-bottom: 14px;
@@ -220,7 +238,7 @@ nav .customer {
 }
 
 .cardComment .commentCommit .commentButton {
-    width: 50px;
+    width: 10%;
     min-height: 25px;
     border-radius: 2px;
     border: 1px solid #a5abb2;
@@ -232,7 +250,6 @@ nav .customer {
 footer {
     height: 50px;
     padding: 16px;
-    margin-bottom: 20px;
     text-align: center;
     color: #6e6c6c;
     font-size: 15px;

@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>htmlhtml</title>
+    <!--Bootstrap core CSS-->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!--Add custom CSS here-->
+    <link href="/static/css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body style="">
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div id="title" class="col-md-6 col-md-offset-3">은행잎필무렵
+        <button class="btn btn-lg btn-block customer">고객센터</button>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div id="newCard" onclick="location.href = &#39;#newCardStart&#39;;">
+                ↑ 새로운 소식
+            </div>
+        </div>
+    </div>
+</div>
+<div class="writePostCard">
+    <div class="container">
+        <div class="row">
+            <div id="introduction" class="col-md-6 col-md-offset-3">모든 글은 익명으로 작성되며, 24시간 후 지워집니다.
+            </div>
+            <div id="writePost" class="col-md-6 col-md-offset-3">
+                <form method="post" role="form" action="/card/add" class="writeCommit">
+                    <textarea id="postTextArea" rows="3" cols="60" type="text" name="body" class="simple"></textarea>
+                    <button id="writeButton" type="submit" class="btn btn-lg btn-primary btn-block">글쓰기</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cardList">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="col-md-6 col-md-offset-3">2014, Angtree
+    </div>
+</footer>
+
+<!--JavaScript-->
+<script src="/static/js/jquery-1.10.2.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<script src="/static/js/main.js"></script>
+</body>
+</html>
